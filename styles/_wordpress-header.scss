@@ -11,9 +11,3 @@ Version: 1.0
 Text Domain: uncommon2023
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
 */
-html, body {
-  font-size: clamp(16px, 1.736vw, 25px)!important;
-}
-.wp-site-blocks > * + * {
-  margin-top: 0;
-}
