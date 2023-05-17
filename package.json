@@ -1,0 +1,21 @@
+{
+  "name": "uncommon2023",
+  "version": "1.0.0",
+  "description": "=== uncommon2023 === Contributors: wordpressdotorg Requires at least: 6.1 Tested up to: 6.2 Requires PHP: 5.6 Stable tag: 1.1 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+  "private": true,
+  "scripts": {
+    "start": "webpack --mode=development --watch & sass --watch styles/index.scss:style.css & sass --watch styles/index-editor.scss:style-editor.css",
+    "build": "webpack --mode=production && sass --style=compressed styles/index.scss:style.css && sass --style=compressed styles/index-editor.scss:style-editor.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.82.0",
+    "webpack-cli": "^5.1.0"
+  },
+  "dependencies": {
+    "motion": "^10.15.5",
+    "sass": "^1.62.1"
+  }
+}

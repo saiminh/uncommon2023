@@ -1,0 +1,21 @@
+header.wp-block-template-part {
+  position: fixed;
+  width: 100%;
+  padding: 1rem var(--wp--preset--spacing--outer, 1rem);
+  box-sizing: border-box;
+  z-index: 100;
+}
+.wp-block-navigation__responsive-container-open {
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
+  padding: var(--wp--preset--spacing--outer, 1rem) 0;
+}
+.wp-block-site-logo {
+  @media (max-width: 599px) {
+    z-index: 100001;
+    position: relative;
+  }
+}

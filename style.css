@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.wp-block-cover-image.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container,
+.wp-block-cover.has-custom-content-position.has-custom-content-position .wp-block-cover__inner-container {
+  width: 100%;
+}
+
+/*
+Theme Name: Uncommon 2023
+Theme URI: https://wordpress.org/themes/uncommon2023
+Author: Simon Flöter
+Author URI: https://floter.design
+Description: Uncommon's website theme.
+Requires at least: 6.1
+Tested up to: 6.2
+Requires PHP: 5.6
+Version: 1.0
+Text Domain: uncommon2023
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
+*/
+html, body {
+  font-size: clamp(16px, 1.736vw, 25px) !important;
+}
+
+.wp-site-blocks > * + * {
+  margin-top: 0;
+}
+
+header.wp-block-template-part {
+  position: fixed;
+  width: 100%;
+  padding: 1rem var(--wp--preset--spacing--outer, 1rem);
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.wp-block-navigation__responsive-container-open {
+  position: absolute;
+  right: 0;
+  top: -12px;
+}
+
+.wp-block-navigation__responsive-container.is-menu-open.has-modal-open {
+  padding: var(--wp--preset--spacing--outer, 1rem) 0;
+}
+
+@media (max-width: 599px) {
+  .wp-block-site-logo {
+    z-index: 100001;
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
