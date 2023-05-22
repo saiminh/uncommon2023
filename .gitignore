@@ -5,4 +5,4 @@ vendor
 .DS_Store
 
 #files
-assets/fonts/
+# assets/fonts/
