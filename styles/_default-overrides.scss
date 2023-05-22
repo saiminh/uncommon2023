@@ -5,3 +5,18 @@
 .wp-site-blocks > * + * {
   margin-top: 0;
 }
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: .075em;
+  text-decoration-color: var(--wp--preset--color--gallery-off-white);
+
+  .has-gallery-off-white-background-color &,
+  .has-gallery-off-white-color & {
+    text-decoration-color: var(--wp--preset--color--pigment-purple);
+  }
+}
+.wp-block-outermost-icon-block a:hover {
+  transform: none;
+}

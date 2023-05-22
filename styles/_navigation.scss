@@ -4,6 +4,10 @@ header.wp-block-template-part {
   padding: 1rem var(--wp--preset--spacing--outer, 1rem);
   box-sizing: border-box;
   z-index: 100;
+
+  & .wp-block-navigation li.wp-block-navigation-item {
+    margin-bottom: 0;
+  }
 }
 .wp-block-navigation__responsive-container-open {
   position: absolute;
@@ -19,3 +23,15 @@ header.wp-block-template-part {
     position: relative;
   }
 }
+// #uncommon-header-logo {
+//   animation: logo-spin infinite 20s linear;
+// }
+
+// @keyframes logo-spin {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//     }
+// }

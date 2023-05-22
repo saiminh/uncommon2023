@@ -1,0 +1,91 @@
+.rotate-5deg-right {
+  transform-origin: 50% 50%;
+  transform: rotate(5deg);
+}
+.rotate-5deg-left {
+  transform-origin: 50% 50%;
+  transform: rotate(-5deg);
+}
+.overlapping-images {
+  padding-bottom: 25%;
+
+  & .wp-block-image figcaption {
+    background-color: var(--wp--preset--color--white);
+    padding: 1em;
+    white-space: nowrap!important;
+    text-align: left;
+    display: inline-block;
+    font-size: var(--wp--preset--font-size--caption);
+  }
+  & .wp-block-image:first-child {
+    text-align: right;
+    position: relative;
+
+    @media screen and (max-width: 599px) {
+      width: 50%;
+      margin-right: var(--wp--preset--spacing--outer)!important;
+    }
+    
+    & figcaption {
+      position: absolute;
+      right: calc(100% + 1em);
+      top: 1rem;
+    }
+  }
+  & .wp-block-image:last-child {
+    position: absolute;
+    transform: rotate(5deg) translate(-33%, -66%); 
+    
+    @media screen and (max-width: 599px) {
+      width: 50%;
+      transform: rotate(5deg) translate(50%, -75%); 
+    }
+    
+    & figcaption {
+      position: absolute;
+      left: calc(100% + 1em);
+      bottom: 1rem;
+    }
+  }
+}
+.overlapping-images-left {
+  padding-bottom: 25%;
+
+  & .wp-block-image figcaption {
+    background-color: var(--wp--preset--color--white);
+    padding: 1em;
+    white-space: nowrap!important;
+    text-align: left;
+    display: inline-block;
+    font-size: var(--wp--preset--font-size--caption);
+  }
+  & .wp-block-image:first-child {
+    position: relative;
+
+    @media screen and (max-width: 599px) {
+      width: 50%;
+      margin-left: var(--wp--preset--spacing--outer)!important;
+    }
+    
+    & figcaption {
+      position: absolute;
+      left: calc(100% + 1em);
+      top: 1rem;
+    }
+  }
+  & .wp-block-image:last-child {
+    position: absolute;
+    transform: rotate(5deg) translate(33%, -66%); 
+    
+    @media screen and (max-width: 599px) {
+      width: 50%;
+      transform: rotate(5deg) translate(50%, -75%); 
+    }
+    
+    & figcaption {
+      position: absolute;
+      right: calc(100% + 1em);
+      bottom: 1rem;
+    }
+  }
+}

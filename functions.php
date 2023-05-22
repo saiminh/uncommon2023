@@ -5,7 +5,7 @@ if ( ! function_exists( 'uncommon2023' ) ) :
     // Adding support for core block visual styles.
     add_theme_support( 'wp-block-styles' );
     // Enqueue editor styles.
-    add_editor_style( 'style-editor.css' );
+    // add_editor_style( 'style-editor.css' );
   }
   add_action( 'after_setup_theme', 'uncommon2023' );
 endif;
@@ -29,3 +29,8 @@ add_action( 'wp_enqueue_scripts', 'uncommon2023_scripts' );
 require_once get_template_directory() . '/inc/remove-comments.php';
 require_once get_template_directory() . '/inc/image-sizes.php';
 require_once get_template_directory() . '/inc/cleanup-frontend-code.php';
+
+add_action('admin_head', 'admin_styles');
+function admin_styles() {
+    echo '<link rel="stylesheet" href="'. get_stylesheet_directory_uri() . '/style-editor.css" type="text/css" media="all" />';
+}

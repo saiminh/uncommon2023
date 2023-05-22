@@ -1,0 +1,19 @@
+body.uncommon-content-has-background {
+  & .wp-block-navigation-item__content {
+    color: var(--wp--preset--color--gallery-off-white)!important;
+  }
+  & .uncommon-ourscience-nav-item {
+    color: var(--wp--preset--color--gallery-off-white)!important;
+    border: 1px solid var(--wp--preset--color--gallery-off-white);
+  }
+  & #uncommon-header-logo path{
+    fill: var(--wp--preset--color--gallery-off-white);
+  }
+  & .wp-block-navigation__responsive-container-open svg,
+  & .wp-block-navigation__responsive-container-close svg {
+    color: var(--wp--preset--color--gallery-off-white);
+  }
+  & .wp-block-navigation:not(.has-background) .wp-block-navigation__responsive-container.is-menu-open {
+    background-color: var(--wp--preset--color--contrast);
+  }
+}

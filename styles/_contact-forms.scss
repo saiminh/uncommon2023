@@ -1,0 +1,173 @@
+label {
+  font-family: var(--wp--preset--font-family--residenz-grotesk);
+  font-size: var(--wp--preset--font-size--body-s);
+}
+textarea {
+  font-family: var(--wp--preset--font-family--residenz-grotesk);
+  font-size: var(--wp--preset--font-size--body-s);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em 0;
+  background-color: transparent;
+  color: currentColor;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  
+  &:focus {
+    padding: 1em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+input[type="submit"] {
+  background-color: var(--wp--preset--color--pigment-purple);
+  color: var(--wp--preset--color--contrast);
+  border-radius: 2em;
+  border-width: 0;
+  font-family: inherit;
+  font-size: var(--wp--preset--font-size--body-m);
+  line-height: 1;
+  padding-top: 0.6em;
+  padding-right: 0.75em;
+  padding-bottom: 0.5em;
+  padding-left: 0.75em;
+  text-decoration: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  color: currentColor;
+  font-family: var(--wp--preset--font-family--residenz-grotesk);
+  font-size: var(--wp--preset--font-size--body-s);
+  padding:  .5em 0 1em 0;
+  width: 100%;
+
+  &::placeholder {
+    font-size: var(--wp--preset--font-size--body-s);
+    font-family: var(--wp--preset--font-family--residenz-grotesk);
+  }
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid var(--wp--preset--color--pigment-purple);
+  }
+  &.wpcf7-not-valid {
+    border-bottom: 2px dashed red;
+  }
+}
+.custom-radio {
+  font-size: var(--wp--preset--font-size--body-s);
+  
+  & input[type="radio"] {
+    position: absolute;
+    visibility: hidden;
+  }
+  .wpcf7-list-item {
+    margin: 0 1em 0 0 ;
+  }
+  .wpcf7-list-item-label {
+    display: flex;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      flex: 0 0 1em;
+      height: 1em;
+      margin-right: .5em;
+      border-radius: 50%;
+      border: 1px solid var(--wp--preset--color--gallery-off-white);
+    }
+  }
+  input[type="radio"]:checked + .wpcf7-list-item-label:before {
+    background-color: var(--wp--preset--color--gallery-off-white);
+  }
+}
+.input-group {
+  display: flex;
+  gap: 1rem;
+
+  @media screen and (max-width: 599px) {
+    display: block;
+  }
+
+  & > * {
+    flex: 0 0 calc(50% - .5rem);
+  }
+  & > *:last-child input[type="submit"]{
+    margin: 0 0 0 auto;
+    display: block;
+  }
+}
+.custom-checkbox, .wpcf7-acceptance{
+  font-size: var(--wp--preset--font-size--body-s);
+  
+  & input[type="checkbox"] {
+    position: absolute;
+    visibility: hidden;
+  }
+  .wpcf7-list-item {
+    margin: 0 1em 0 0 ;
+  }
+  .wpcf7-list-item-label {
+    display: flex;
+
+    &:before {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      flex: 0 0 1em;
+      height: 1em;
+      margin-right: .5em;
+      border-radius: 50%;
+      border: 1px solid var(--wp--preset--color--gallery-off-white);
+    }
+  }
+  input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
+    background-color: var(--wp--preset--color--gallery-off-white);
+  }
+}
+.wpcf7-not-valid-tip {
+  padding: .5em;
+  margin-top: 1px;
+  background-color: red;
+  color: white;
+  display: inline-block;
+  border-radius: 0 0 3px 3px;
+
+  &:before {
+    content: "↑ ";
+  }
+}
+.wpcf7 form .wpcf7-response-output {
+  border: 1px solid var(--wp--preset--color--pigment-purple); /* Blue */
+  background-color: var(--wp--preset--color--pigment-purple);
+  color: var(--wp--preset--color--contrast);
+  border-radius: 1rem;
+  padding: 1em;
+  margin: 1em 0;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+  border-color: #46b450; /* Green */
+  background-color: #46b450; /* Green */
+}
+
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+  border-color: var(--wp--preset--color--cured-red); /* Red */
+  background-color: var(--wp--preset--color--cured-red); /* Red */
+}
+
+.wpcf7 form.spam .wpcf7-response-output {
+  border-color: var(--wp--preset--color--streaky-orange); /* Orange */
+  background-color: var(--wp--preset--color--streaky-orange); /* Orange */
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  border-color: var(--wp--preset--color--streaky-orange); /* Orange */
+  background-color: var(--wp--preset--color--streaky-orange); /* Orange */
+}

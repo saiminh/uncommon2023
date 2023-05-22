@@ -1,3 +1,47 @@
+@use 'layout-classes';
+// UI
+html.interface-interface-skeleton__html-container {
+  font-size: clamp(16px, 1.736vw, 25px)!important;
+}
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper {
+  margin: 0 !important;
+  background-color: #EEE;
+}
+.editor-styles-wrapper .wp-block-post-title {
+  font-size: var(--wp--preset--font-size--body-m)!important;
+  position: relative;
+  margin: 0 !important;
+  padding: 1.2em 1em .8em 1em ;
+
+  &:before {
+    content: 'Page title';
+    font-size: var(--wp--preset--font-size--caption);
+    position: absolute;
+    top: 1em;
+    left: var(--wp--preset--font-size--body-m);
+    opacity: .3;
+    z-index: 1;
+  }
+}
 .edit-post-fullscreen-mode-close.components-button {
-  background: red!important;
+  background: #FFF!important;
+  border-bottom: 1px solid #DDD;
+}
+.edit-post-fullscreen-mode-close.components-button::before {
+  box-shadow: none;
+}
+// specific to theme
+h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: var(--wp--preset--color--gallery-off-white);
+  
+  .has-gallery-off-white-background-color & {
+    text-decoration-color: var(--wp--preset--color--pigment-purple);
+  }
+}
+
+.editor-styles-wrapper h1.uncommon-ourscience-content-hero-title {
+  font-size: var(--wp--preset--font-size--h-3);
 }
