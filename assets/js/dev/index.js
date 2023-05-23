@@ -5,13 +5,6 @@ global.motion = {
   scroll
 }
 
-function detectDarkBg(){
-  const contentWrapper = document.querySelector("main > .entry-content");
-  if ( contentWrapper.querySelector(':first-child').classList.contains('has-contrast-background-color')) {
-    document.body.classList.add('uncommon-content-has-background');
-  }
-}
-
 function videoAutoPlayOnlyWhenIntersecting(){
   // check for video elements on the page
   const videos = document.querySelectorAll('video');
@@ -39,6 +32,5 @@ function videoAutoPlayOnlyWhenIntersecting(){
 
 
 window.addEventListener("load", () => {
-  detectDarkBg();
   videoAutoPlayOnlyWhenIntersecting();
 })

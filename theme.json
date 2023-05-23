@@ -482,7 +482,7 @@
 				},
 				":visited": {
 					"color": {
-						"text": "inherit"
+						"text": "var(--wp--preset--color--pigment-purple)"
 					}
 				}
 			},
