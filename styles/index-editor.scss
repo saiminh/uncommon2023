@@ -45,3 +45,13 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
 .editor-styles-wrapper h1.uncommon-ourscience-content-hero-title {
   font-size: var(--wp--preset--font-size--h-3);
 }
+.label, .components-base-control__label {
+  background-color: #000;
+  color: var(--wp--preset--color--base,#fff);
+  display: inline-block;
+  font-size: var(--wp--preset--font-size--caption, .75rem);
+  font-family: monospace;
+  margin: 0!important;
+  padding: .25rem .5rem!important;
+  text-transform: none!important;
+}
