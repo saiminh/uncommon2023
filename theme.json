@@ -163,49 +163,49 @@
 			"fontSizes": [
 				{
           "fluid": false,
-					"size": "0.48rem",
+					"size": "clamp(12px, 0.48rem, 1.8vw)",
 					"slug": "caption",
           "name": "Caption"
 				},
 				{
           "fluid": false,
-					"size": "0.6rem",
+					"size": "clamp(14px, 0.6rem, 2vw)",
 					"slug": "body-xs",
           "name": "Body XS"
 				},
 				{
           "fluid": false,
-					"size": "0.8rem",
+					"size": "clamp(16px, 0.8rem, 2.113vw)",
 					"slug": "body-s",
           "name": "Body S"
 				},
 				{
           "fluid": false,
-					"size": "1rem",
+					"size": "clamp(18px, 1rem, 2.64vw)",
 					"slug": "body-m",
           "name": "Body M"
 				},
         {
           "fluid": false,
-          "size": "1.4rem",
+          "size": "clamp(20px, 1.4rem, 3.7vw)",
           "slug": "body-l",
           "name": "Body L"
         },
         {
           "fluid": false,
-          "size": "2rem",
+          "size": "clamp(22px, 2rem, 5.333vw)",
           "slug": "h-4",
           "name": "H4"
         },
         {
           "fluid": false,
-          "size": "clamp(28px, 3rem, 8vw)",
+          "size": "clamp(25px, 3rem, 8vw)",
           "slug": "h-3",
           "name": "H3"
         },
         {
           "fluid": false,
-          "size": "clamp(30px, 3.6rem, 10vw)",
+          "size": "clamp(28px, 3.6rem, 10vw)",
           "slug": "h-2",
           "name": "H2"
         },
