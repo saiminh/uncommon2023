@@ -74,15 +74,21 @@ html.has-modal-open .page-template-page-dark #uncommon-header-logo path {
   fill: var(--wp--preset--color--contrast);
 }
 
-// #uncommon-header-logo {
-//   animation: logo-spin infinite 20s linear;
-// }
+#uncommon-header-logo {
+  animation: logo-spin infinite 7s linear;
+}
 
-// @keyframes logo-spin {
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(360deg);
-//     }
-// }
+@keyframes logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    }
+}
