@@ -16,6 +16,13 @@
 				"page"
 			],
 			"title": "404"
+		},
+		{
+			"name": "page-dark",
+			"postTypes": [
+				"page"
+			],
+			"title": "Default Dark Template"
 		}
 	],
 	"settings": {
