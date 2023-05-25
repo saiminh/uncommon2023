@@ -28,6 +28,7 @@ add_action( 'wp_enqueue_scripts', 'uncommon2023_scripts' );
 
 require_once get_template_directory() . '/inc/remove-comments.php';
 require_once get_template_directory() . '/inc/image-sizes.php';
+require_once get_template_directory() . '/inc/custom-post-template.php';
 require_once get_template_directory() . '/inc/cleanup-frontend-code.php';
 
 add_action('admin_head', 'admin_styles');

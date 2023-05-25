@@ -58,3 +58,11 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
 .component-spacing-sizes-control .components-base-control__label {
   height: auto;
 }
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper > .alignwide, .editor-styles-wrapper .block-editor-block-list__layout.is-root-container > .alignwide.custom-post-block-template {
+  max-width: 600px;
+  margin-top: 1rem;
+
+  & .wp-block-post-featured-image:before {
+    content: 'Featured Image'
+  }
+}

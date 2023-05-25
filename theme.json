@@ -144,15 +144,6 @@
 							"src": [
 								"file:./assets/fonts/ResidenzGrotesk-Regular.woff2"
 							]
-						},
-						{
-							"fontFamily": "Residenz Grotesk",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "600",
-							"src": [
-                "file:./assets/fonts/ResidenzGrotesk-Bold.woff2"
-							]
 						}
 					],
 					"fontFamily": "\"Residenz Grotesk\", sans-serif",
