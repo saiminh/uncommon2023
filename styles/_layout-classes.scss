@@ -8,6 +8,11 @@
 }
 .overlapping-images {
   padding-bottom: 25%;
+  
+  @media screen and (max-width: 599px) {
+    position: relative;
+    overflow: hidden;
+  }
 
   & .wp-block-image figcaption {
     background-color: var(--wp--preset--color--white);
@@ -38,13 +43,14 @@
     
     @media screen and (max-width: 599px) {
       width: 50%;
-      transform: rotate(5deg) translate(50%, -75%); 
+      transform: rotate(5deg) translate(10%, -75%); 
     }
     
     & figcaption {
       position: absolute;
       left: calc(100% + 1em);
       bottom: 1rem;
+      max-width: 80%;
     }
   }
 }
