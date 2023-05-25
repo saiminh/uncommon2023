@@ -212,6 +212,11 @@
 	},
 	"styles": {
 		"blocks": {
+      "core/paragraph": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--body-s)"
+        }
+      },
 			"core/navigation": {
 				"elements": {
 					"link": {
