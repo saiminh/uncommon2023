@@ -7,7 +7,6 @@
   transform: rotate(-5deg);
 }
 .overlapping-images {
-  padding-bottom: 25%;
   
   @media screen and (max-width: 599px) {
     position: relative;
@@ -44,6 +43,7 @@
     }
   }
   & .wp-block-image:last-child {
+    margin-bottom: -33%;
     transform: rotate(5deg) translate(-33%, -66%); 
     
     & figcaption {
@@ -55,7 +55,6 @@
   }
 }
 .overlapping-images-left {
-  padding-bottom: 25%;
 
   & .wp-block-image figcaption {
     background-color: var(--wp--preset--color--white);
@@ -82,6 +81,7 @@
     }
   }
   & .wp-block-image:last-child {
+    margin-bottom: -33%;
     transform: rotate(5deg) translate(33%, -66%); 
     
     @media screen and (max-width: 599px) {
