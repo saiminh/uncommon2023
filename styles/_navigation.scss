@@ -17,6 +17,8 @@ header.wp-block-template-part {
   }
   & .wp-block-navigation__container {
     gap: 0.5em;
+    justify-content: center;
+    padding-right: calc(48px + 1rem);
   }
   & .wp-block-navigation li.wp-block-navigation-item {
     margin-bottom: 0;
