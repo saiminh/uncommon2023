@@ -13,7 +13,14 @@
     position: relative;
     overflow: hidden;
   }
-
+  & .wp-block-image {
+    max-width: 66.666%!important;
+    margin-right: 0!important;
+    
+    @media screen and (max-width: 599px) {
+      margin-right: var(--wp--preset--spacing--outer)!important;
+    }
+  }
   & .wp-block-image figcaption {
     background-color: var(--wp--preset--color--white);
     padding: 1em;
@@ -27,7 +34,6 @@
     position: relative;
 
     @media screen and (max-width: 599px) {
-      width: 50%;
       margin-right: var(--wp--preset--spacing--outer)!important;
     }
     
@@ -38,13 +44,7 @@
     }
   }
   & .wp-block-image:last-child {
-    position: absolute;
     transform: rotate(5deg) translate(-33%, -66%); 
-    
-    @media screen and (max-width: 599px) {
-      width: 50%;
-      transform: rotate(5deg) translate(10%, -75%); 
-    }
     
     & figcaption {
       position: absolute;
@@ -65,14 +65,16 @@
     display: inline-block;
     font-size: var(--wp--preset--font-size--caption);
   }
+  & .wp-block-image {
+    max-width: 66.666%!important;
+    margin-left: 0!important;
+  }
   & .wp-block-image:first-child {
     position: relative;
 
     @media screen and (max-width: 599px) {
-      width: 50%;
       margin-left: var(--wp--preset--spacing--outer)!important;
     }
-    
     & figcaption {
       position: absolute;
       left: calc(100% + 1em);
@@ -80,14 +82,11 @@
     }
   }
   & .wp-block-image:last-child {
-    position: absolute;
     transform: rotate(5deg) translate(33%, -66%); 
     
     @media screen and (max-width: 599px) {
-      width: 50%;
-      transform: rotate(5deg) translate(50%, -75%); 
+      transform: rotate(5deg) translate(33%, -75%); 
     }
-    
     & figcaption {
       position: absolute;
       right: calc(100% + 1em);
