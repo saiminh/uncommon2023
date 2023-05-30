@@ -15,10 +15,6 @@
   & .wp-block-image {
     max-width: 66.666%!important;
     margin-right: 0!important;
-    
-    @media screen and (max-width: 599px) {
-      margin-right: var(--wp--preset--spacing--outer)!important;
-    }
   }
   & .wp-block-image figcaption {
     background-color: var(--wp--preset--color--white);
@@ -32,10 +28,6 @@
     text-align: right;
     position: relative;
 
-    @media screen and (max-width: 599px) {
-      margin-right: var(--wp--preset--spacing--outer)!important;
-    }
-    
     & figcaption {
       position: absolute;
       right: calc(100% + 1em);
@@ -43,7 +35,7 @@
     }
   }
   & .wp-block-image:last-child {
-    margin-bottom: -33%;
+    margin-bottom: -40%;
     transform: rotate(5deg) translate(-33%, -66%); 
     
     & figcaption {
@@ -71,9 +63,6 @@
   & .wp-block-image:first-child {
     position: relative;
 
-    @media screen and (max-width: 599px) {
-      margin-left: var(--wp--preset--spacing--outer)!important;
-    }
     & figcaption {
       position: absolute;
       left: calc(100% + 1em);
@@ -81,7 +70,7 @@
     }
   }
   & .wp-block-image:last-child {
-    margin-bottom: -33%;
+    margin-bottom: -40%;
     transform: rotate(5deg) translate(33%, -66%); 
     
     @media screen and (max-width: 599px) {
