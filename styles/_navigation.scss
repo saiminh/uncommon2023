@@ -1,13 +1,16 @@
 header.wp-block-template-part {
   --nav-pill-bg: var(--wp--preset--color--gallery-off-white);
   --nav-pill-color: var(--wp--preset--color--contrast);
-  --nav-pill-bg--current: var(--wp--preset--color--pigment-purple);
+  --nav-pill-bg--hover: var(--wp--preset--color--pigment-purple);
+  --nav-pill-bg--current: var(--wp--preset--color--contrast);
+  --nav-pill-color--current: var(--wp--preset--color--gallery-off-white);
   --nav-pill-bg--focus: var(--wp--preset--color--pigment-purple);
+  --nav-pill-color--focus: var(--wp--preset--color--contrast);
   position: fixed;
   width: 100%;
   padding: 1rem var(--wp--preset--spacing--outer, 1rem);
   box-sizing: border-box;
-  z-index: 100;
+  z-index: 102;
 
   @media (max-width: 599px) {
     & .wp-block-navigation ul{
@@ -34,10 +37,14 @@ header.wp-block-template-part {
     line-height: 1;
     transition: .3s cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  & .current-menu-item .wp-block-navigation-item__content,
-  & .wp-block-navigation-item__content:hover {
+  & .current-menu-item .wp-block-navigation-item__content {
     text-decoration: none;
     background-color: var(--nav-pill-bg--current);
+    color: var(--nav-pill-color--current);
+  }
+  & .wp-block-navigation-item__content:hover {
+    text-decoration: none;
+    background-color: var(--nav-pill-bg--hover);
   }
   & .wp-block-navigation-item__content:active {
     -webkit-tap-highlight-color: transparent;
@@ -48,7 +55,8 @@ header.wp-block-template-part {
     transition: none;
     transform-origin: 50% 50%;
     transform: scale(1.05);
-    background-color: var(--nav-pill-bg--current);
+    background-color: var(--nav-pill-bg--focus);
+    color: var(--nav-pill-color--focus);
     outline: none;
     text-decoration: none;
   }

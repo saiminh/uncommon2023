@@ -1,0 +1,22 @@
+.wp-element-button, 
+.wp-block-button__link {
+  transition: transform .4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.wp-element-button:active, 
+.wp-block-button__link:active {
+  transform: scale(1.05);
+}
+.wp-element-button:hover, 
+.wp-block-button__link:hover {
+
+  &.has-gallery-off-white-background-color {
+    background-color: var(--wp--preset--color--contrast)!important;
+    color: var(--wp--preset--color--gallery-off-white)!important;
+  }
+  &.has-pigment-purple-background-color {
+    background-color: var(--wp--preset--color--contrast)!important;
+    color: var(--wp--preset--color--pigment-purple)!important;
+  }
+
+}
