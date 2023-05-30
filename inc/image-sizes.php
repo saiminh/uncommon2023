@@ -25,7 +25,9 @@ add_action('after_setup_theme', 'uncommon_add_image_sizes');
 
 function uncommon_custom_sizes( $sizes ) {
   return array_merge( $sizes, array(
-    'square' => __( 'Square for Homepage Header' ),
+    'square-s' => __( 'Square 1/4' ),
+    'square' => __( 'Square 1/3 for Homepage Header' ),
+    'square-l' => __( 'Square 1/2' ),
     'rectangle-portrait-s' => __( 'Rectangle Portrait 1/4' ),
     'rectangle-portrait' => __( 'Rectangle Portrait 1/3' ),
     'rectangle-portrait-l' => __( 'Rectangle Portrait 1/2' ),
@@ -42,9 +44,17 @@ function my_content_image_sizes_attr( $sizes, $size, $image_src, $image_meta, $a
   $width = $size[0];
   $height = $size[1];
   
+  //square 1/4
+  if ( $width == 480 && $height == 480 ) {
+    $sizes = '(min-width: 600px) 25vw, 75vw';
+  }  
   //square for homepage header
   if ( $width == 640 && $height == 640 ) {
     $sizes = '(min-width: 600px) 33vw, 75vw';
+  }  
+  //square 1/2
+  if ( $width == 720 && $height == 720 ) {
+    $sizes = '(min-width: 600px) 50vw, 75vw';
   }  
   //rectangle portrait 1/2
   if ( $width == 720 && $height == 960 ) {
