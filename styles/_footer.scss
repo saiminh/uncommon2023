@@ -3,4 +3,10 @@ footer.wp-block-template-part {
   & .wp-block-navigation ul {
     gap: 1em;
   }
+  & .footer-hygiene .wp-block-navigation__container {
+    display: block;
+    & .wp-block-navigation-item .wp-block-navigation-item__content {
+      padding: .5em 0;
+    }
+  }
 }
