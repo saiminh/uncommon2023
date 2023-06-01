@@ -66,10 +66,12 @@ input[type="tel"] {
     visibility: hidden;
   }
   .wpcf7-list-item {
-    margin: 0 1em 0 0 ;
+    margin: 0 1em 0.5em 0 ;
   }
   .wpcf7-list-item-label {
     display: flex;
+    position: relative;
+    cursor: pointer;
 
     &:before {
       content: '';
@@ -80,10 +82,24 @@ input[type="tel"] {
       margin-right: .5em;
       border-radius: 50%;
       border: 1px solid var(--wp--preset--color--gallery-off-white);
+      box-sizing: border-box;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      width: .5em;
+      height:  .5em;
+      border-radius: 50%;
+      background-color: var(--wp--preset--color--gallery-off-white);
+      transform-origin: 50% 50%;
+      transform: scale(0);
+      transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     }
   }
-  input[type="radio"]:checked + .wpcf7-list-item-label:before {
-    background-color: var(--wp--preset--color--gallery-off-white);
+  input[type="radio"]:checked + .wpcf7-list-item-label:after {
+      transform: scale(1);
   }
 }
 .input-group {
@@ -114,8 +130,11 @@ input[type="tel"] {
   }
   .wpcf7-list-item-label {
     display: flex;
-
+    position: relative;
+    cursor: pointer;
+    
     &:before {
+      box-sizing: border-box;
       content: '';
       display: inline-block;
       width: 1em;
@@ -125,9 +144,22 @@ input[type="tel"] {
       border-radius: 50%;
       border: 1px solid var(--wp--preset--color--gallery-off-white);
     }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0.25em;
+      left: 0.25em;
+      width: .5em;
+      height:  .5em;
+      border-radius: 50%;
+      background-color: var(--wp--preset--color--gallery-off-white);
+      transform-origin: 50% 50%;
+      transform: scale(0);
+      transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
   }
-  input[type="checkbox"]:checked + .wpcf7-list-item-label:before {
-    background-color: var(--wp--preset--color--gallery-off-white);
+  & input[type="checkbox"]:checked + .wpcf7-list-item-label:after {
+    transform: scale(1);
   }
 }
 .wpcf7-not-valid-tip {
