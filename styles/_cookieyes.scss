@@ -1,7 +1,7 @@
 .cky-btn {
   border-radius: 2em!important;
   border-width: 1px!important;
-  font-size: var(--wp--preset--font-size--body-s)!important;
+  font-size: var(--wp--preset--font-size--body-xs)!important;
   line-height: 1!important;
   padding: 0.5em 0.75em 0.4em 0.75em !important;
   flex: none!important;
@@ -22,4 +22,8 @@
       font-size: var(--wp--preset--font-size--body-xs)!important;
     }
   }
+}
+.cky-consent-bar .cky-banner-btn-close {
+  right: 1.5em!important;
+  top: 1.5em!important;
 }
