@@ -39,6 +39,7 @@ input[type="tel"] {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid currentColor;
+  border-radius: 0!important;
   color: currentColor;
   font-family: var(--wp--preset--font-family--residenz-grotesk);
   font-size: var(--wp--preset--font-size--body-s);
