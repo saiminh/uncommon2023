@@ -1,0 +1,42 @@
+#mc_embed_signup_scroll {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 2em;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  padding: .25em;
+  margin: 0 auto;
+  max-width: 600px;
+  
+  & .indicates-required {
+    display: none;
+  }
+  & .mc-field-group {
+    width: 100%;
+    padding: 0 1em;
+  }
+  & .mc-field-group label {
+    display: none;
+  }
+  & input[type="email"]{
+    border: none;
+    width: 100%;
+    padding: 0;
+    color: var(--wp--preset--color--sizzling-brown);
+
+    &::placeholder {
+      color: var(--wp--preset--color--uncured-pink);
+    }
+  }
+  & input[type="submit"]{
+    background-color: var(--wp--preset--color--sizzling-brown);
+    color: #FFF;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: var(--wp--preset--color--uncured-pink);
+      color: var(--wp--preset--color--sizzling-brown);
+    }
+  }
+}
