@@ -1,0 +1,25 @@
+.cky-btn {
+  border-radius: 2em!important;
+  border-width: 1px!important;
+  font-size: var(--wp--preset--font-size--body-s)!important;
+  line-height: 1!important;
+  padding: 0.5em 0.75em 0.4em 0.75em !important;
+  flex: none!important;
+
+  &:last-child {
+    margin: 0 0 0 auto;
+  }
+}
+.cky-consent-container .cky-consent-bar {
+  border-radius: 1em!important;
+
+  & p {
+    line-height: 1.3!important;
+    font-size: var(--wp--preset--font-size--caption)!important;
+    color: var(--wp--preset--color--contrast)!important;
+
+    &.cky-title {
+      font-size: var(--wp--preset--font-size--body-xs)!important;
+    }
+  }
+}
