@@ -26,7 +26,7 @@
     color: var(--wp--preset--color--sizzling-brown);
 
     &::placeholder {
-      color: var(--wp--preset--color--uncured-pink);
+      color: rgba(65, 11, 30, .5);
     }
   }
   & input[type="submit"]{
