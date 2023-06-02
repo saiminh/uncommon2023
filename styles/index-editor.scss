@@ -30,6 +30,9 @@ html.interface-interface-skeleton__html-container {
 .edit-post-fullscreen-mode-close.components-button::before {
   box-shadow: none;
 }
+.editor-styles-wrapper p.label {
+  font-size: var(--wp--preset--font-size--caption, 0.75rem);
+}
 // specific to theme
 h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
   font-style: normal;
