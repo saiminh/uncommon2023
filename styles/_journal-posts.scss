@@ -1,0 +1,4 @@
+// when there's a featured image and another featured image in the post template, only show the first one
+.wp-block-post .wp-block-post-featured-image ~ .entry-content .wp-block-post-featured-image {
+  display: none;
+}
