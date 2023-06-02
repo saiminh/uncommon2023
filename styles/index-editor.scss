@@ -7,18 +7,18 @@ html.interface-interface-skeleton__html-container {
   margin: 0 !important;
   background-color: #EEE;
 }
-.editor-styles-wrapper .wp-block-post-title {
+.editor-styles-wrapper .edit-post-visual-editor__post-title-wrapper .wp-block-post-title {
   font-size: var(--wp--preset--font-size--body-m)!important;
   position: relative;
   margin: 0 !important;
-  padding: 1.2em 1em .8em 1em ;
+  padding: 1.2em 1em .8em .75em ;
 
   &:before {
     content: 'Page title';
     font-size: var(--wp--preset--font-size--caption);
     position: absolute;
-    top: 1em;
-    left: var(--wp--preset--font-size--body-m);
+    bottom: calc( 100% - var(--wp--preset--font-size--caption) - .5em );
+    left: calc( 0.75 * var(--wp--preset--font-size--body-m) );
     opacity: .3;
     z-index: 1;
   }
