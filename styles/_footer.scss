@@ -3,6 +3,9 @@ footer.wp-block-template-part {
   & .wp-block-navigation ul {
     gap: 0;
   }
+  & .wp-block-navigation.is-horizontal ul {
+    gap: 1em;
+  }
   @media screen and (max-width: 599px) {
     & .footer-hygiene .wp-block-navigation__container {
       display: block;
