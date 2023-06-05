@@ -1,7 +1,7 @@
 footer.wp-block-template-part {
 
   & .wp-block-navigation ul {
-    gap: 1em;
+    gap: 0;
   }
   @media screen and (max-width: 599px) {
     & .footer-hygiene .wp-block-navigation__container {
