@@ -69,3 +69,7 @@ h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
     content: 'Featured Image'
   }
 }
+// when there's a featured image and another featured image in the post template, only show the first one
+.wp-block-post .wp-block-post-featured-image ~ .wp-block-post-content .wp-block-post-featured-image {
+  display: none;
+}
