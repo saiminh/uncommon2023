@@ -35,8 +35,9 @@
     }
   }
   & .wp-block-image:last-child {
-    margin-bottom: -40%;
-    transform: rotate(5deg) translate(-33%, -66%); 
+    margin-top: -20%;
+    margin-right: 20%!important;
+    transform: rotate(5deg); 
     
     & figcaption {
       position: absolute;
@@ -47,6 +48,8 @@
   }
 }
 .overlapping-images-left {
+  max-width: 100%;
+  // overflow-x: hidden;
 
   & .wp-block-image figcaption {
     background-color: var(--wp--preset--color--white);
@@ -70,12 +73,10 @@
     }
   }
   & .wp-block-image:last-child {
-    margin-bottom: -40%;
-    transform: rotate(5deg) translate(33%, -66%); 
+    margin-top: -20%;
+    margin-left: 20%!important;
+    transform: rotate(5deg); 
     
-    @media screen and (max-width: 599px) {
-      transform: rotate(5deg) translate(33%, -75%); 
-    }
     & figcaption {
       position: absolute;
       right: calc(100% + 1em);
